@@ -4,12 +4,7 @@ pipeline {
     stage('test') {
       agent any
       steps {
-        sh '''ansible --version
----
-host: localhost
-task:
-  name: install httpd
-  shell: apt-get install -y apache2'''
+        sh 'ansible-playbook installapache.yml'
       }
     }
 
