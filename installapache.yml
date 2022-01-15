@@ -1,0 +1,5 @@
+---
+hosts: localhost
+tasks: 
+  name: install apache
+  shell: apt-get install -y apache2
