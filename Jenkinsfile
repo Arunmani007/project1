@@ -4,7 +4,7 @@ pipeline {
     stage('test') {
       agent any
       steps {
-        sh 'ansible-playbook test.yml'
+        sh 'ansible-playbook installapache.yml'
       }
     }
 
