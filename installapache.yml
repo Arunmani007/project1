@@ -1,5 +1,5 @@
 ---
-- hosts: inventory
+- hosts: all
   tasks: 
     - name: install apache
       command: apt-get install -y apache2
